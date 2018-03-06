@@ -34,6 +34,6 @@ public class MainActivity extends AppCompatActivity {
         VehicleComponent component = DaggerVehicleComponent.builder().vehicleModule(new VehicleModule()).build();
         vehicle = component.provideVehicle();
 
-        Toast.makeText(this, "Vehicle Speed: " + vehicle.getSpeed(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Vehicle Speed....: " + vehicle.getSpeed(), Toast.LENGTH_SHORT).show();
     }
 }
